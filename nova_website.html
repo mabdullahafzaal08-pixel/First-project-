@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova — Creative Studio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #172033; background: #f7f8fc; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 22px 8%; background: white; }
+    .logo { font-size: 1.5rem; font-weight: 800; color: #635bff; }
+    nav a { margin-left: 24px; text-decoration: none; color: #39445a; font-weight: 600; }
+    nav a:hover { color: #635bff; }
+    .hero { padding: 95px 8%; display: grid; grid-template-columns: 1.2fr 1fr; gap: 45px; align-items: center; }
+    .tag { color: #635bff; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+    h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.08; margin: 16px 0; }
+    .hero p { color: #667085; max-width: 520px; font-size: 1.08rem; }
+    .btn { display: inline-block; margin-top: 28px; padding: 13px 23px; border-radius: 9px; background: #635bff; color: white; text-decoration: none; font-weight: 700; }
+    .art { min-height: 330px; border-radius: 28px; background: linear-gradient(135deg,#7c73ff,#b9b3ff 55%,#e7e5ff); display: grid; place-items: center; box-shadow: 0 25px 60px #635bff30; }
+    .art span { font-size: 7rem; filter: drop-shadow(0 15px 12px #4038a855); }
+    .section { padding: 65px 8%; text-align: center; }
+    .section h2 { font-size: 2.2rem; margin-bottom: 10px; }
+    .muted { color: #667085; }
+    .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 35px; text-align: left; }
+    .card { background: white; padding: 28px; border-radius: 16px; box-shadow: 0 8px 30px #18213a0b; }
+    .card .emoji { font-size: 2rem; }
+    .card h3 { margin: 13px 0 7px; }
+    footer { padding: 25px 8%; text-align: center; color: #778096; background: white; }
+    @media (max-width: 700px) {
+      header { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 9px; font-size: .9rem; }
+      .hero { grid-template-columns: 1fr; padding-top: 60px; }
+      .art { min-height: 230px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">nova.</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="tag">Ideas made real</div>
+        <h1>Build something <span style="color:#635bff">brilliant.</span></h1>
+        <p>We help ambitious people turn bold ideas into beautiful digital experiences. Simple, thoughtful, and made to work for you.</p>
+        <a class="btn" href="#services">Explore what we do</a>
+      </div>
+      <div class="art" aria-label="Abstract creative illustration"><span>✦</span></div>
+    </section>
+
+    <section class="section" id="services">
+      <h2>What we do</h2>
+      <p class="muted">A few ways we can help your next big idea grow.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>Creative design</h3>
+          <p class="muted">Clean and memorable visuals that make your brand stand out.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>Web development</h3>
+          <p class="muted">Fast, responsive websites that look great on every screen.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">🚀</div>
+          <h3>Digital growth</h3>
+          <p class="muted">Practical ideas and smart strategy to move your project forward.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>Small team. Big ideas.</h2>
+      <p class="muted">Nova is a sample creative studio website. Replace this text with your own story, services, and contact details.</p>
+      <a class="btn" href="mailto:hello@example.com">Contact us</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Nova Studio · Made with creativity</footer>
+</body>
+</html>
